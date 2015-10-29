@@ -122,10 +122,10 @@ public class RedstoneTicker{
             tasks.toArray(taskArray);
         }
         for(RegisteredTask task : taskArray){
-            MonitorStopwatch monitor = new MonitorStopwatch("TickerTask", 50, () -> server.getLogger().warning("Task "+task.getTask()+" taking too long: over 50 milliseconds to complete!"));
-            monitor.startMonitoring();
+            //MonitorStopwatch monitor = new MonitorStopwatch("TickerTask", 50, () -> server.getLogger().warning("Task "+task.getTask()+" taking too long: over 50 milliseconds to complete!"));
+            //monitor.startMonitoring();
             task.check(tick);
-            monitor.stopMonitoring();
+            //monitor.stopMonitoring();
         }
         
         String line = null;
