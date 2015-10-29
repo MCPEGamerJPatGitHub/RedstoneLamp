@@ -25,7 +25,6 @@ import java.util.List;
 import net.redstonelamp.Server;
 import net.redstonelamp.cmd.exception.CommandException;
 import net.redstonelamp.utils.AntiSpam;
-import net.redstonelamp.utils.MonitorStopwatch;
 
 /**
  * The ticker used by RedstoneLamp.
@@ -122,10 +121,14 @@ public class RedstoneTicker{
             tasks.toArray(taskArray);
         }
         for(RegisteredTask task : taskArray){
-            //MonitorStopwatch monitor = new MonitorStopwatch("TickerTask", 50, () -> server.getLogger().warning("Task "+task.getTask()+" taking too long: over 50 milliseconds to complete!"));
-            //monitor.startMonitoring();
+            //long start = System.currentTimeMillis();
             task.check(tick);
-            //monitor.stopMonitoring();
+            //long elapsed = System.currentTimeMillis() - start;
+            /*
+            if(elapsed > 20) {
+                server.getLogger().warning("Task "+task.getTask()+" took "+elapsed+"ms!");
+            }
+            */
         }
         
         String line = null;

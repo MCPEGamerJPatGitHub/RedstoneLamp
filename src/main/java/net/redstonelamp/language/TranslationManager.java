@@ -71,6 +71,8 @@ public class TranslationManager {
         switch (code) {
             case "eng":
                 return "en-US";
+            case "rus":
+                return "ru-RU";
             default:
                 return code;
         }
