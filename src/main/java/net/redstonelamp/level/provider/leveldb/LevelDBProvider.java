@@ -70,11 +70,11 @@ public class LevelDBProvider implements LevelProvider{
         options.createIfMissing(true);
         options.compressionType(CompressionType.ZLIB);
         
-        File databaseDir = new File(levelDir, "db");
+        File databaseDir = new File(levelDir + File.separator + "db");
         try{
             database = Iq80DBFactory.factory.open(databaseDir, options);
         }catch(IOException e){
-            level.getManager().getServer().getLogger().error(e.getClass().getName() + " while loading LevelDB world " + databaseDir.getName());
+            level.getManager().getServer().getLogger().error(e.getClass().getName() + " while loading LevelDB world " + databaseDir);
             throw new LevelLoadException(e);
         }
     }
