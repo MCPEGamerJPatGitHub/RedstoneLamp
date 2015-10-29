@@ -1,0 +1,18 @@
+;Language implementation for Russian, Russia
+[Translations]
+redstonelamp.translation.player.joined=%param-0 присоединился к игре.
+redstonelamp.translation.player.left=%param-0 покинул игру.
+redstonelamp.translation.player.loggedInFromOtherLocation=Другой пользователь зашел с Вашим именем!
+
+redstonelamp.translation.command.usage=Использование: %param-0.
+
+redstonelamp.translation.command.help.header=-- Помощь по командам (Страница %param-0/%param-1) --
+redstonelamp.translation.command.help.listEntry=/%param-0 - %param-1
+redstonelamp.translation.command.help.invalidPage=Страница %param-0 не существует!
+
+redstonelamp.translation.command.version.line1=Этот сервер работает под управлением %param-0 %param-1 %param-2.
+redstonelamp.translation.command.version.line2=Поддерживает MCPE: %param-0, MCPC: %param-1.
+
+redstonelamp.translation.command.list.noPlayers=Нет игроков в сети.
+redstonelamp.translation.command.list.onePlayer=Один игрок в сети: %param-0
+redstonelamp.translation.command.list.multiple=%param-0 игроков в сети:
