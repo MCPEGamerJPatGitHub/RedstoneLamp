@@ -58,6 +58,8 @@ public class Item implements Items {
         items.put(STONE, Stone.class);
         items.put(TALL_GRASS, TallGrass.class);
         items.put(WOODEN_PLANKS, WoodPlanks.class);
+        items.put(GLASS, Glass.class);
+        items.put(QUARTZ_BLOCK, Quartz.class);
     }
 
     private static void initCreativeItems() {
@@ -71,6 +73,8 @@ public class Item implements Items {
         addCreativeItem(get(WOODEN_PLANKS, (short) WoodPlanks.PlankType.JUNGLE.getMetaId()));
         addCreativeItem(get(WOODEN_PLANKS, (short) WoodPlanks.PlankType.BIRCH.getMetaId()));
         addCreativeItem(get(WOODEN_PLANKS, (short) WoodPlanks.PlankType.DARK_OAK.getMetaId()));
+        addCreativeItem(get(GLASS, (short) 0));
+        addCreativeItem(get(QUARTZ_BLOCK, (short) 0));
     }
 
     public static synchronized void addCreativeItem(Item item) {
