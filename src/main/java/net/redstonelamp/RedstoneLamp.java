@@ -62,13 +62,15 @@ public class RedstoneLamp{
         return SOFTWARE + " build #" + SOFTWARE_BUILD + ", commit: " + SOFTWARE_COMMIT + ", built on: " + SOFTWARE_BUILD_DATE;
     }
 
-    public static Logger getLogger(String[] args) {
+    public static Logger getLogger(String[] args) throws IOException {
         if(args.length > 0) {
             String option = args[0];
             if(option.startsWith("-")) {
                 if(option.equalsIgnoreCase("--silent") || option.equalsIgnoreCase("-s")) {
                     Logger logger = new Logger(new SilentConsoleOut("RedstoneLamp-Silent"));
                     System.setOut(new SystemConsoleOut(logger));
+                    new File("exceptionDump.txt").createNewFile();
+                    System.setErr(new PrintStream("exceptionDump.txt"));
                     return new Logger(new Log4j2ConsoleOut("RedstoneLamp")); //So we can log to file
                 }
             }
