@@ -73,6 +73,10 @@ public class TranslationManager {
                 return "en-US";
             case "rus":
                 return "ru-RU";
+            case "deu":
+                return "de-DE";
+            case "ger":
+                return "de-DE";
             default:
                 return code;
         }

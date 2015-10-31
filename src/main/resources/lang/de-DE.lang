@@ -1,0 +1,18 @@
+;Language implementation for German, Germany
+[Translations]
+redstonelamp.translation.player.joined=%param-0 hat das Spiel betreten.
+redstonelamp.translation.player.left=%param-0 hat das Spiel verlassen.
+redstonelamp.translation.player.loggedInFromOtherLocation=Ein anderer Benutzer hat sich mit deinem Namen eingeloggt!
+
+redstonelamp.translation.command.usage=Benutzung: %param-0.
+
+redstonelamp.translation.command.help.header=-- Befehlshilfe (Seite %param-0/%param-1) --
+redstonelamp.translation.command.help.listEntry=/%param-0 - %param-1
+redstonelamp.translation.command.help.invalidPage=Seite %param-0 existiert nicht!
+
+redstonelamp.translation.command.version.line1=Auf diesem Server läuft %param-0 %param-1 %param-2.
+redstonelamp.translation.command.version.line2=Implementiert MCPE: %param-0, MCPC: %param-1.
+
+redstonelamp.translation.command.list.noPlayers=Es sind keine Spieler online.
+redstonelamp.translation.command.list.onePlayer=Es ist 1 Spieler online: %param-0
+redstonelamp.translation.command.list.multiple=Es sind %param-0 Spieler online:
