@@ -1,0 +1,18 @@
+;Language implementation for French, FRANCE
+[Translations]
+redstonelamp.translation.player.joined=%param-0  a rejoint le serveur.
+redstonelamp.translation.player.left=%param-0 a quitté le serveur.
+redstonelamp.translation.player.loggedInFromOtherLocation=Un autre joueur utilise déjà ce pseudo !
+
+redstonelamp.translation.command.usage=Usage: %param-0.
+
+redstonelamp.translation.command.help.header=-- Liste des commandes (Page %param-0/%param-1) --
+redstonelamp.translation.command.help.listEntry=/%param-0 - %param-1
+redstonelamp.translation.command.help.invalidPage=La page %param-0 n'existe pas ! 
+
+redstonelamp.translation.command.version.line1=Ce serveur tourne sous : %param-0 %param-1 %param-2.
+redstonelamp.translation.command.version.line2=MCPE version : %param-0, MCPC version: %param-1.
+
+redstonelamp.translation.command.list.noPlayers=Aucun joueur connecté actuellement ! 
+redstonelamp.translation.command.list.onePlayer=Il y a actuellement 1 joueur connecté: %param-0
+redstonelamp.translation.command.list.multiple=Il y a  %param-0 joueurs connectés:
