@@ -38,14 +38,14 @@ public class Command {
 	public static void init() throws CommandException {
 		if(registeredDefaults)
 			throw new CommandException("The defaults have already been registered!");
-		registerCommand(new Command("say", "/say (message)", "Broadcasts a message to the server", new SayCommand(), true));
-		registerCommand(new Command("list", "/list", "Shows all of the online players to the sender", new ListCommand(), true));
-		registerCommand(new Command("kick", "/kick (player) [reason]", "Kicks a player with the specified reason", new KickCommand(), true));
-		registerCommand(new Command("permission", "/permission (permission) [player]", "See's if a player has a permission", new PermissionTest(), true));
-		registerCommand(new Command("help", "/help", "View a list of all commands", new HelpCommand(), false));
-	    registerCommand(new Command("version", "/version", "Shows the version of this server", new VersionCommand(), false));
-		registerCommand(new Command("reload", "/reload", "Reloads all the server data and plugins", new ReloadCommand(), false));
-	    registerCommand(new Command("stop", "/stop", "Stops the server", new StopCommand(), false));
+		registerCommand(new Command("say", "/say (message)", "!redstonelamp.translation.command.say.description", new SayCommand(), true));
+		registerCommand(new Command("list", "/list", "!redstonelamp.translation.command.list.description", new ListCommand(), true));
+		registerCommand(new Command("kick", "/kick (player) [reason]", "!redstonelamp.translation.command.kick.description", new KickCommand(), true));
+		registerCommand(new Command("permission", "/permission (permission) [player]", "!redstonelamp.translation.command.permission.description", new PermissionTest(), true));
+		registerCommand(new Command("help", "/help", "!redstonelamp.translation.command.help.description", new HelpCommand(), false));
+	    registerCommand(new Command("version", "/version", "!redstonelamp.translation.command.version.description", new VersionCommand(), false));
+		registerCommand(new Command("reload", "/reload", "!redstonelamp.translation.command.reload.description", new ReloadCommand(), false));
+	    registerCommand(new Command("stop", "/stop", "!redstonelamp.translation.command.stop.description", new StopCommand(), false));
 	    registeredDefaults = true;
 	}
 	
