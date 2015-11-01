@@ -124,7 +124,7 @@ public class Item implements Items {
         addCreativeItem(get(DIAMOND_BLOCK, (short) 0));
         addCreativeItem(get(DIAMOND_ORE, (short) 0));
         addCreativeItem(get(DIRT, (short) 0));
-        addCreativeItem(get(FIRE, (short) 0));
+        //addCreativeItem(get(FIRE, (short) 0));
         addCreativeItem(get(GLASS, (short) 0));
         addCreativeItem(get(GLOWING_REDSTONE_ORE, (short) 0));
         addCreativeItem(get(GOLD_BLOCK, (short) 0));
@@ -136,7 +136,7 @@ public class Item implements Items {
         addCreativeItem(get(IRON_ORE, (short) 0));
         addCreativeItem(get(LAPIS_BLOCK, (short) 0));
         addCreativeItem(get(LAPIS_ORE, (short) 0));
-        addCreativeItem(get(LAVA, (short) 0));
+        //addCreativeItem(get(LAVA, (short) 0));
         addCreativeItem(get(LEAVES, (short) 0));
         addCreativeItem(get(LOG, (short) 0));
         addCreativeItem(get(MOSSY_STONE, (short) 0));
@@ -152,14 +152,14 @@ public class Item implements Items {
         addCreativeItem(get(SNOW_BLOCK, (short) 0));
         addCreativeItem(get(MONSTER_SPAWNER, (short) 0));
         addCreativeItem(get(SPONGE, (short) 0));
-        addCreativeItem(get(STILL_LAVA, (short) 0));
-        addCreativeItem(get(STILL_WATER, (short) 0));
+        //addCreativeItem(get(STILL_LAVA, (short) 0));
+        //addCreativeItem(get(STILL_WATER, (short) 0));
         addCreativeItem(get(STONE, (short) 0));
         addCreativeItem(get(STONE_BRICKS, (short) 0));
         addCreativeItem(get(TALL_GRASS, (short) 0));
         addCreativeItem(get(TNT, (short) 0));
         addCreativeItem(get(TORCH, (short) 0));
-        addCreativeItem(get(WATER, (short) 0));
+        //addCreativeItem(get(WATER, (short) 0));
         addCreativeItem(get(WOODEN_PLANKS, (short) WoodPlanks.PlankType.OAK.getMetaId()));
         addCreativeItem(get(WOODEN_PLANKS, (short) WoodPlanks.PlankType.SPRUCE.getMetaId()));
         addCreativeItem(get(WOODEN_PLANKS, (short) WoodPlanks.PlankType.ACACIA.getMetaId()));
