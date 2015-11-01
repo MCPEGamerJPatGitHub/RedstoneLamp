@@ -1,3 +1,5 @@
+package net.redstonelamp.network.npd;
+
 /*
  * This file is part of RedstoneLamp.
  *
@@ -14,16 +16,14 @@
  * You should have received a copy of the GNU Lesser General Public License
  * along with RedstoneLamp.  If not, see <http://www.gnu.org/licenses/>.
  */
-package net.redstonelamp.network.packet;
 
-public class RLPFormatException extends Exception{
-    public RLPFormatException(String msg){
-        super(msg);
-    }
-    public RLPFormatException(Throwable cause){
-        super(cause);
-    }
-    public RLPFormatException(String msg, Throwable cause){
-        super(msg, cause);
-    }
+import lombok.Data;
+
+@Data
+public class PacketField{
+    private PacketFieldType type;
+    private String name;
+    // TODO Request
+    // TODO Response
+    // TODO support conditional fields, such as TextPacket in protocol #MCPE-34
 }

@@ -1,0 +1,6 @@
+NPDVersion 2
+
+ProtocolName "MCPE Protocol" 34
+
+ProtocolDescription This protocol documentation is written against protocol 34 of MCPE, implemented in MCPE Alpha 0.12.0 to 0.12.3\
+                    This protocol documentation documents the MCPE data packets, which is under the layer of RakNet encapsulated packets. RakNet packets are not documented in this protocol documentation.

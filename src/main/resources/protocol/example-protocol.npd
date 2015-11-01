@@ -1,0 +1,45 @@
+# Network Protocol Documentation Language example protocol
+
+# syntax: NPDVersion <compatible NPDL version> <second NPDL version> ...
+# specifies the compatible NPDL version(s)
+NPDVersion 2 # this example is written for vesrion 2
+
+# syntax: ProtocolName <protocol name> <protocol version>
+ProtocolName "Example Protocol" 1
+
+# syntax: ProtocolDescription <as much as you want to type>...
+ProtocolDescription this is an example protocol.\
+ In this way you can\
+  spread your line into multiple lines.\
+    And it can be \
+   of any number of spaces!\
+  However, the line breaks will be all considered as LF ('\n'), regardless of the encoding of this file.
+# In this way you can make comments with the # sign
+  # Just indent this file in any sizes and we still accept it!
+ #However, indents in tabs are not accepted at the moment.
+
+# Here we declare a packet with the packet ID 0x01...
+
+# syntax: DeclarePacket <packet ID>
+DeclarePacket 0x01              # here are some accepted expressions of integers:
+                                # expression    expressed value
+                                # 0xAB          AB (base 16)
+                                # 0b10          10 (base  2)
+                                # 070           70 (base  8)
+                                # 1DZ_36        1DZ (base 36)
+                                # note #1: for <num>_<radix> expressions, 2 <= radix <= 36
+                                # note #2: for <num>_<radix> expressions, num must not begin with 0
+  # syntax: PacketName <packet name>
+  PacketName "Login Packet"
+
+  # syntax: PacketField <type> <field name/skip size>
+  # to specify type as an array, add a [] suffix without spaces.
+  PacketField STRING username
+  PacketField SKIP 4
+
+  # syntax: BindRequest <Request class name, relative to net.redstonelamp.request>
+  # syntax: BindResponse <Request class name, relative to net.redstonelamp.response>
+
+# CommitPacket accepts no parameters.
+# CommitPacket marks the current packet declaration as completed, and the parser is ready to declare another packet.
+CommitPacket
